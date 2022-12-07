@@ -1,0 +1,170 @@
+.body {
+  position: relative;
+  height: 26.875rem;
+  width: 71.75rem;
+  border-radius: 3.125rem;
+  background: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin-top: 7rem;
+  margin-bottom: 12.5rem;
+  padding: 0;
+  left: 5rem;
+}
+
+.slide {
+  height: 26.875rem;
+  width: 68.75rem;
+
+  .slideFlex {
+    display: flex;
+    justify-content: space-between;
+    height: 26.875rem;
+    width: 68.75rem;
+  }
+
+  .zumba {
+    position: relative;
+    width: 34.375rem;
+    height: 23.75rem;
+    top: 1.25rem;
+    left: 1.25rem;
+  }
+
+  .clockZumba {
+    position: absolute;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    bottom: 0.0625rem;
+  }
+
+  .half {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    color: #15a1b8;
+    margin-top: 1.875rem;
+  }
+
+  .mid {
+    color: #000;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: lighter;
+  }
+
+  .halfTwo {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.625rem;
+    color: black;
+  }
+
+  .date{
+    position: absolute;
+    width: 4.6875rem;
+    height: 5rem;
+    left: 448px;
+    top: 25px;
+  }
+
+  .time {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    color: black;
+    margin: 0%;
+  }
+
+  .time2 {
+    margin-left: 2.5rem;
+  }
+
+  .price {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    color: black;
+    margin-left: 1.875rem;
+  }
+
+  .yellowBg {
+    background-color: #ffcd00;
+    border-radius: 0.3125rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .description {
+    h1 {
+      font-size: 1.5625rem;
+    }
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    line-height: 99%;
+    width: 31.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .buyPassBtn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: black;
+    background-color: #ffcd00;
+    font-size: 1.25rem;
+    border: 1px solid #ffcd00;
+    border-radius: 20px;
+    padding: 10px 100px;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    margin-left: 6.875rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.31);
+  }
+  .buyPassBtn:hover {
+    color: black;
+    background-color: #ffe476;
+  }
+
+  .lineOne {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lineTwo {
+    position: relative;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 3.125rem;
+  bottom: 5.3125rem;
+}
+
+.swiper-pointer-events {
+  height: 3.125rem;
+  bottom: 5.3125rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1.125rem;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
