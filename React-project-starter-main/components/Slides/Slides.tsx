@@ -24,7 +24,7 @@ const Slides = () => {
               <div className={s.zumba}>
                 <Image src="/images/zumba.png" layout="fill" />
               </div>
-              <div>
+              <div className={s.info}>
                 <div className={s.lineOne}>
                   <div>
                     {" "}
@@ -38,7 +38,21 @@ const Slides = () => {
                     <Image src="/images/date.png" layout="fill" />
                   </div>
                 </div>
+
                 <div className={s.lineTwo}>
+                  <div className={s.time}>
+                    <span className={s.clockZumba}>
+                      <Image src="/images/Clock-zumba.png" layout="fill" />
+                    </span>
+                    <span className={s.time2}> 5:30pm to 6:30pm </span>
+                    </div>
+                    <div className={s.timeline}>
+                    <span className={s.price}>
+                      Price: <span className={s.yellowBg}>Rs.200/person</span>{" "}
+                    </span>
+                    </div>  
+                </div>
+                {/* <div className={s.lineTwo}>
                   <h1 className={s.time}>
                     <span className={s.clockZumba}>
                       <Image src="/images/Clock-zumba.png" layout="fill" />
@@ -48,7 +62,7 @@ const Slides = () => {
                       Price: <span className={s.yellowBg}>Rs.200/person</span>{" "}
                     </span>
                   </h1>
-                </div>
+                </div> */}
                 <div className={s.description}>
                   <h1>Description:</h1>
                   <p>

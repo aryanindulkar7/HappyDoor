@@ -6,7 +6,8 @@ import s from "./Sponser.module.scss";
 
 function Sponser() {
   return (
-    <div>
+    <div className={s.body}>
+      <div className={s.header}>
       <div className={s.sponsers}>
         <div>
           <h1>Sponsers</h1>
@@ -15,6 +16,7 @@ function Sponser() {
           {" "}
           <Image src="/images/underline.png" layout="fill" />
         </div>
+      </div>
       </div>
 
       <div className={s.containerLineOne}>

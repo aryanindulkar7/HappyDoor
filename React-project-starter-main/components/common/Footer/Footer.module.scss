@@ -1,48 +1,82 @@
 @import "/styles/variables.scss";
 
 .container {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 2rem;
-  background-color: #15A1B8;
+  background-color: #15a1b8;
   padding-top: 4rem;
-  margin-top: 150px;
+  margin-top: 3.125rem;
 
-  @media screen and (max-width: $mobileResolution) {
+  @media screen and (max-width: 700px) {
     padding: 3.5rem 1rem;
   }
 }
 
-.subBg{
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.subWrapper {
+  width: 37.5rem;
+  @media screen and (max-width: 700px) {
+    width: 14.5rem;
+  }
+}
+
+.subBg {
   width: 8.75rem;
   height: 5rem;
-  position: absolute;
-  z-index: auto;
-  margin-left: 15.75rem;
-}
-
-.subscribe{
   position: relative;
-  color: white;
-  font-size: 100px
+  z-index: auto;
+  top: 69px;
+  left: -31px;
+  @media screen and (max-width: 700px) {
+    width: 50px;
+    height: 30px;
+    left: -14px;
+    top: 27px;
+  }
+  .subBgImg {
+    position: absolute;
+  }
 }
 
-.belowSubscribe{
-  width: 50%;
-  margin-left: 5rem;
-font-family: 'Poppins', sans-serif;
-font-style:light;
-font-size: 1.875rem;
-line-height: 1.625rem;
-line-height: 86%;
-text-align: Left;
-vertical-align: Center;
+.subscribe {
+  h1 {
+    position: relative;
+    color: white;
+    font-size: 6.25rem;
+    @media screen and (max-width: 700px) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.belowSubscribe {
+  p {
+    width: 31.25rem;
+    margin-left: 5rem;
+    font-family: "Poppins", sans-serif;
+    font-style: light;
+    font-size: 1.875rem;
+    line-height: 1.625rem;
+    line-height: 86%;
+    text-align: Left;
+    vertical-align: Center;
+    @media screen and (max-width: 700px) {
+      font-size: 1.125rem;
+      margin-left: 1.25rem;
+      width: 21.125rem;
+    }
+  }
 }
 
 .bottomSection {
-  background-color: #15A1B8;
+  background-color: #15a1b8;
   position: relative;
-  width:1512px ;
+  width: 1512px;
   height: 150px;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
@@ -50,38 +84,66 @@ vertical-align: Center;
   box-shadow: 0px -8px 4px rgba(0, 0, 0, 0.25);
   @media screen and (max-width: $mobileResolution) {
     font-weight: 400 !important;
-    font-size: .9375rem !important;
+    font-size: 0.9375rem !important;
   }
 }
 
-.myInput{
-  border-radius: 3.125rem;
-    height: 3.75rem;
-    width: 53.625rem;
-    border: none;
-    font-size: 1.875rem;
-    color: #15A1B8;
-    box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.25);
-    &::placeholder{
-      color: #15A1B8;
-      padding-left: 30px;
-    }
+.flex {
+  display: flex;
+  @media screen and (max-width: $mobileResolution) {
+    display: block;
+  }
 }
 
-.submitButton{
+.myInput {
   border-radius: 3.125rem;
   height: 3.75rem;
-  width:12.5rem ;
-  background-color: #FFCD00;
+  width: 100%;
+  border: none;
+  font-size: 1.875rem;
+  color: #15a1b8;
+  box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.25);
+  @media screen and (max-width: $mobileResolution) {
+    width: 95%;
+    height: 61px;
+    border-radius: 20px;
+  }
+  &::placeholder {
+    color: #15a1b8;
+    padding-left: 30px;
+  }
+}
+
+.submitButton {
+  border-radius: 3.125rem;
+  height: 3.75rem;
+  width: 100%;
+  background-color: #ffcd00;
   color: black;
   border: none;
   margin-left: 1.25rem;
-  padding-top: .3125rem;
-  box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.25)
+  padding: 0.3125rem;
+  box-shadow: 4px 10px 4px rgba(0, 0, 0, 0.25);
+  @media screen and (max-width: $mobileResolution) {
+    border-radius: 0.9375rem;
+    width: 40%;
+    margin-left: 12.1875rem;
+    margin-top: 1.875rem;
+  }
 }
-.submitButton:hover{
+.submitButton:hover {
   color: black;
   background-color: #ffe476;
+}
+
+.btnAlign {
+  display: block;
+  width: 50%;
+  @media screen and (max-width: $mobileResolution) {
+    display: flex;
+    justify-content: end;
+    width: 97%;
+  }
 }
 
 .footerLogo {

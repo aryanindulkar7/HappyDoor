@@ -1,7 +1,7 @@
 .body {
   position: relative;
   height: 26.875rem;
-  width: 71.75rem;
+  width: 90%;
   border-radius: 3.125rem;
   background: white;
   font-family: "Poppins", sans-serif;
@@ -10,7 +10,21 @@
   margin-top: 7rem;
   margin-bottom: 12.5rem;
   padding: 0;
-  left: 5rem;
+  left: 3rem;
+  @media screen and (max-width: 700px) {
+    margin-top: 3.125rem;
+    display: block;
+    width: 85%;
+    height: 32.125rem;
+    left: 1.875rem;
+  }
+}
+
+.mySwiper {
+  @media screen and (max-width: 700px) {
+    width: 18.6875rem;
+    height: 33.6875rem;
+  }
 }
 
 .slide {
@@ -21,22 +35,38 @@
     display: flex;
     justify-content: space-between;
     height: 26.875rem;
-    width: 68.75rem;
+    width: 100%;
+    @media screen and (max-width: 700px) {
+      display: block;
+    }
   }
 
   .zumba {
     position: relative;
-    width: 34.375rem;
+    width: 50%;
     height: 23.75rem;
     top: 1.25rem;
     left: 1.25rem;
+    @media screen and (max-width: 700px) {
+      width: 296px;
+      height: 235px;
+      left: 2px;
+    }
   }
 
+  .info{
+    width: 45%;
+  }
   .clockZumba {
     position: absolute;
     width: 1.5625rem;
     height: 1.5625rem;
     bottom: 0.0625rem;
+    @media screen and (max-width: 1250px) {
+    top: -2px;}
+    @media screen and (max-width: 700px) {
+      top: 3px;
+    }
   }
 
   .half {
@@ -44,6 +74,15 @@
     font-size: 2.5rem;
     color: #15a1b8;
     margin-top: 1.875rem;
+    @media screen and (max-width: 1250px) {
+      font-size: 1.5625rem;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: 1.25rem;
+    }
+    @media screen and (max-width: 700px) {
+      font-size: 1.375rem;
+    }
   }
 
   .mid {
@@ -56,14 +95,29 @@
     font-family: "Poppins", sans-serif;
     font-size: 1.625rem;
     color: black;
+    @media screen and (max-width: 1250px) {
+      font-size: 1.25rem;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: .9375rem;
+    }
+    @media screen and (max-width: 700px) {
+      font-size: 1.125rem;
+    }
   }
 
-  .date{
-    position: absolute;
+  .date {
+    position: relative;
     width: 4.6875rem;
     height: 5rem;
-    left: 448px;
-    top: 25px;
+    right: 1rem;
+    top: 1.25rem;
+    @media screen and (max-width: 700px) {
+      width: 56px;
+      height: 58px;
+      left: 235px;
+      top: -272px;
+    }
   }
 
   .time {
@@ -71,10 +125,20 @@
     font-size: 1.125rem;
     color: black;
     margin: 0%;
+    @media screen and (max-width: 700px) {
+      margin-left: 6px;
+    }
   }
 
   .time2 {
     margin-left: 2.5rem;
+    @media screen and (max-width: 1250px) {
+      font-size: 15px;
+      margin-left: 2.5rem;
+    }
+    @media screen and (max-width: 700px) {
+      margin-left: 1.875rem;
+    }
   }
 
   .price {
@@ -82,6 +146,10 @@
     font-size: 1.125rem;
     color: black;
     margin-left: 1.875rem;
+    @media screen and (max-width: 700px) {
+      font-size: 15px;
+      margin-left: 8px;
+    }
   }
 
   .yellowBg {
@@ -97,8 +165,23 @@
     font-family: "Poppins", sans-serif;
     font-size: 1.25rem;
     line-height: 99%;
-    width: 31.25rem;
+    width: 95%;
     margin-top: 1.25rem;
+    @media screen and (max-width: 1000px) {
+      font-size: 1.25rem;
+    }
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+    p{
+      @media screen and (max-width: 1250px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: .75rem;
+        line-height: .8125rem;
+      }
+    }
   }
 
   .buyPassBtn {
@@ -114,6 +197,19 @@
     margin-top: 1.25rem;
     margin-left: 6.875rem;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.31);
+    @media screen and (max-width: 1250px) {
+    margin-top: -4px;
+    margin-left: 2.875rem;
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 10px 50px;
+    margin-top: 0%;
+  }
+    @media screen and (max-width: 700px) {
+      width: 150%;
+      margin-top: 30px;
+      padding: 10px 20px;
+    }
   }
   .buyPassBtn:hover {
     color: black;
@@ -124,10 +220,31 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 700px) {
+      display: block;
+      width: 200%;
+      height: 3.75rem;
+    }
   }
 
   .lineTwo {
     position: relative;
+    display: flex;
+    @media screen and (max-width: 1250px) {
+      margin-top: 1.875rem;
+    }
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      margin-top: 1.875rem;
+    }
+    @media screen and (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 286px;
+      height: 65px;
+      margin-top: 0px;
+    }
   }
 }
 
@@ -137,10 +254,7 @@
   bottom: 5.3125rem;
 }
 
-.swiper-pointer-events {
-  height: 3.125rem;
-  bottom: 5.3125rem;
-}
+
 
 .swiper-slide {
   text-align: center;

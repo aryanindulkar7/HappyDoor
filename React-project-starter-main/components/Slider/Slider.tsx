@@ -29,7 +29,7 @@ export default function Slider() {
 
       <div className={s.body}>
         <Swiper
-          slidesPerView={4}
+          slidesPerView={5}
           spaceBetween={-60}
           freeMode={true}
           modules={[FreeMode, Pagination]}
@@ -109,6 +109,8 @@ export default function Slider() {
           </SwiperSlide>
         </Swiper>
       </div>
+      <div><h2  className={s.footer}>View all</h2></div>
+      
     </>
   );
 }

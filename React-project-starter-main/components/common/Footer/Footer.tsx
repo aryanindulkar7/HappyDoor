@@ -8,26 +8,43 @@ const Footer: FC = () => {
   return (
     <>
       <div className={s.container}>
-        <div>
-        <div className={s.subBg}>
-          <Image 
+        <div className={s.header}>
+          <div className={s.subWrapper}>
+            <div className={s.subBg}>
+              <Image
+                className={s.subBgImg}
                 src="/images/sub-bg.png"
                 layout="fill"
               />
-           </div> 
-           <div> <h1 className={s.subscribe}>Subscribe</h1></div>
-        </div>
-          <div><p className={s.belowSubscribe}>Be the first to know about all our upcoming events!</p></div>
-          <div><input className={s.myInput} type="text" name="myInput" placeholder="lorem@ipusum.com" size={80} />
-          <button className={s.submitButton} type="submit">Submit</button>
+            </div>
+            <div className={s.subscribe}>
+              <h1>Subscribe</h1>
+            </div>
           </div>
+        </div>
+        <div className={s.belowSubscribe}>
+          <p>Be the first to know about all our upcoming events!</p>
+        </div>
+        <div className={s.flex}>
+          <div>
+            <input
+              className={s.myInput}
+              type="text"
+              name="myInput"
+              placeholder="lorem@ipusum.com"
+              size={80}
+            />
+          </div>
+          <div className={s.btnAlign}>
+            <button className={s.submitButton} type="submit">
+              Submit
+            </button>
+          </div>
+        </div>
       </div>
       <div className={s.bottomSection}>
         <div className={s.footerLogo}>
-        <Image 
-                src="/images/logo.png"
-                layout="fill"
-              />
+          <Image src="/images/logo.png" layout="fill" />
         </div>
       </div>
     </>
