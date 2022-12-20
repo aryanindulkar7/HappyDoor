@@ -43,7 +43,7 @@
 
   .zumba {
     position: relative;
-    width: 50%;
+    width: 46%;
     height: 23.75rem;
     top: 1.25rem;
     left: 1.25rem;
@@ -54,8 +54,8 @@
     }
   }
 
-  .info{
-    width: 45%;
+  .info {
+    width: 50%;
   }
   .clockZumba {
     position: absolute;
@@ -63,7 +63,8 @@
     height: 1.5625rem;
     bottom: 0.0625rem;
     @media screen and (max-width: 1250px) {
-    top: -2px;}
+      top: -2px;
+    }
     @media screen and (max-width: 700px) {
       top: 3px;
     }
@@ -99,7 +100,7 @@
       font-size: 1.25rem;
     }
     @media screen and (max-width: 1000px) {
-      font-size: .9375rem;
+      font-size: 0.9375rem;
     }
     @media screen and (max-width: 700px) {
       font-size: 1.125rem;
@@ -173,13 +174,14 @@
     @media screen and (max-width: 700px) {
       display: none;
     }
-    p{
+    p {
+      font-size: 1rem;
       @media screen and (max-width: 1250px) {
         font-size: 14px;
       }
       @media screen and (max-width: 1000px) {
-        font-size: .75rem;
-        line-height: .8125rem;
+        font-size: 0.75rem;
+        line-height: 0.8125rem;
       }
     }
   }
@@ -198,13 +200,13 @@
     margin-left: 6.875rem;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.31);
     @media screen and (max-width: 1250px) {
-    margin-top: -4px;
-    margin-left: 2.875rem;
-  }
-  @media screen and (max-width: 1000px) {
-    padding: 10px 50px;
-    margin-top: 0%;
-  }
+      margin-top: -4px;
+      margin-left: 2.875rem;
+    }
+    @media screen and (max-width: 1000px) {
+      padding: 10px 50px;
+      margin-top: 0%;
+    }
     @media screen and (max-width: 700px) {
       width: 150%;
       margin-top: 30px;
@@ -253,8 +255,6 @@
   height: 3.125rem;
   bottom: 5.3125rem;
 }
-
-
 
 .swiper-slide {
   text-align: center;

@@ -25,20 +25,22 @@ const Footer: FC = () => {
         <div className={s.belowSubscribe}>
           <p>Be the first to know about all our upcoming events!</p>
         </div>
-        <div className={s.flex}>
-          <div>
-            <input
-              className={s.myInput}
-              type="text"
-              name="myInput"
-              placeholder="lorem@ipusum.com"
-              size={80}
-            />
-          </div>
-          <div className={s.btnAlign}>
-            <button className={s.submitButton} type="submit">
-              Submit
-            </button>
+        <div className={s.center}>
+          <div className={s.flex}>
+            <div>
+              <input
+                className={s.myInput}
+                type="text"
+                name="myInput"
+                placeholder="lorem@ipusum.com"
+                size={80}
+              />
+            </div>
+            <div className={s.btnAlign}>
+              <button className={s.submitButton} type="submit">
+                Submit
+              </button>
+            </div>
           </div>
         </div>
       </div>

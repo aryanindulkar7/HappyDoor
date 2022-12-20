@@ -109,8 +109,9 @@ export default function Slider() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div><h2  className={s.footer}>View all</h2></div>
-      
+      <div>
+        <h2 className={s.footer}>View all</h2>
+      </div>
     </>
   );
 }

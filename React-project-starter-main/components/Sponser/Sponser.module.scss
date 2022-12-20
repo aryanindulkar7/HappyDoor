@@ -39,58 +39,15 @@
   }
 }
 
-.containerLineOne {
-  display: flex;
-  justify-content: space-between;
-  width: 1600px;
-
-  .container {
-    width: 376px;
-    height: 146px;
-    margin-top: 2.5rem;
-    background-color: white;
-    box-shadow: 15px 14px 12px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    animation-name: rightToLeft;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
+.slider {
+  height: 13.125rem;
 }
 
-.containerLineTwo {
-  display: flex;
-  justify-content: space-between;
-  width: 1600px;
-
-  .containerTwo {
-    width: 376px;
-    height: 146px;
-    margin-top: 2.5rem;
-    background-color: white;
-    box-shadow: 15px 14px 12px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    animation-name: leftToRight;
-    animation-duration: 8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-}
-
-@keyframes rightToLeft {
-  0% {
-    transform: translateX(1300px);
-  }
-  100% {
-    transform: translateX(-1600px);
-  }
-}
-
-@keyframes leftToRight {
-  0% {
-    transform: translateX(-1600px);
-  }
-  100% {
-    transform: translateX(1300px);
-  }
+.slides {
+  width: 376px;
+  height: 146px;
+  margin-top: 2.5rem;
+  background-color: white;
+  box-shadow: 15px 14px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
 }

@@ -53,7 +53,15 @@ const Banner = () => {
         </div>
       </div>
       <div className={s.wrapper}>
-        <h1 className={s.target}>Shopping Food Dance Live Music</h1>
+        <h1 className={s.target}>
+          {" "}
+          <span className={s.marqueeStyle}>
+            Shopping Food Dance Live Music
+          </span>{" "}
+          <span className={s.marqueeStyle2}>
+            Shopping Food Dance Live Music
+          </span>
+        </h1>
         <h1 className={s.activities}>Activities</h1>
       </div>
     </>
